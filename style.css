@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-image: url('/assests/background_image.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-menu {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%);
+}
+
+.nav-bar {
+    margin: 5px 5px 0px 5px;
+    font-size: 26px;
+}
+
+.nav-bar .logo {
+    max-width: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 2rem;
+
+}
+
+.nav-bar .menuitems {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style-type: none;
+    margin-right: 5rem;
+    margin-top: 0.5rem;
+}
+
+.nav-bar .menuitems li {
+    margin-right: 5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%) 1;
+    border-image-slice: 10;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+
+
+
+}
+
+
+.nav-bar .menuitems li:hover {
+    background-color: white;
+    color: #05044B;
+    background-clip: text;
+}
+
+.block_quotes {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    border: 2px solid black;
+    max-width: 50%;
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    display: none;
+
+}
+
+span {
+    color: #FC7A36;
+}
+
+.welcome_para {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    border: 2px solid red;
+    max-width: 50%;
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+
+#url-form {
+    color: white;
+    position: absolute;
+    border: 2px solid red;
+    max-width: 40%;
+    height: 60%;
+    top: 20%;
+    right: 5%;
+    display: inline-block;
+
+}
