@@ -21,23 +21,25 @@ body {
 
 .nav-bar {
     margin: 5px 5px 0px 5px;
-    font-size: 26px;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar .logo {
     max-width: 10%;
     display: inline-flex;
     flex-direction: row;
-    margin-left: 2rem;
+    margin-left: 2vw;
 
 }
 
 .nav-bar .menuitems {
     display: flex;
     flex-direction: row;
-    float: right;
     list-style-type: none;
-    margin-right: 5rem;
+    margin-right: 5vw;
     margin-top: 0.5rem;
 }
 
@@ -49,7 +51,7 @@ body {
     color: #fff;
     font-weight: bolder;
     border: 2px solid transparent;
-    border-image: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%) 1;
+    border-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) 1;
     border-image-slice: 10;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -68,19 +70,6 @@ body {
     background-clip: text;
 }
 
-.block_quotes {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    border: 2px solid black;
-    max-width: 50%;
-    padding: 20px;
-    font-size: 26px;
-    text-align: center;
-    color: #fff;
-    display: none;
-
-}
 
 span {
     color: #FC7A36;
@@ -91,7 +80,6 @@ span {
     position: absolute;
     top: 20%;
     left: 5%;
-    border: 2px solid red;
     max-width: 50%;
     padding: 20px;
     font-size: 26px;
@@ -103,11 +91,82 @@ span {
 #url-form {
     color: white;
     position: absolute;
-    border: 2px solid red;
-    max-width: 40%;
-    height: 60%;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     top: 20%;
-    right: 5%;
-    display: inline-block;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+#url-form h1 {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 36px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    width: 60%;
+    max-width: 100%;
+    margin-left: 4rem;
+
+
+}
+
+
+
+#url-form label {
+    margin-left: 4rem;
+    font-size: 26px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.block_quotes {
+    max-width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    margin: 0.5rem auto;
+    position: absolute;
+    top: 70%;
+}
+
+.block_quotes p {
+    margin: 0;
+
+}
+
+.block_quotes footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+button {
+    display: flex;
+    position: absolute;
+    right: 10rem;
+    padding: 0.5vw;
+    margin: 0.55rem;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+button:hover {
+    color: #FC7A36;
+    background-color: #333;
+    font-weight: 400;
 }
